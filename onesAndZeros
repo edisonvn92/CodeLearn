@@ -1,0 +1,9 @@
+function onesAndZeros(s){
+    let arr = s.split('');
+    arr.sort();
+    if (arr.indexOf('1')==0||arr.indexOf('1')==-1) {
+        return arr.length;
+    } else {
+        return Math.abs(arr.length-2*arr.indexOf('1'));
+    }
+}

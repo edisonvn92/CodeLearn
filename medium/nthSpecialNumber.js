@@ -7,8 +7,8 @@ function nthSpecialNumber(n){
         i++;
     }
     for(let a=0; a<=i; a++) {
-        for (let b=0; b<=i; b++) {
-            for (let c=0; c<=i; c++) {
+        for (let b=0; b<=i/1.6; b++) {
+            for (let c=0; c<=i/2.3; c++) {
                 numArr.push(Math.pow(2,a)*Math.pow(3,b)*Math.pow(5,c));
             }
         }

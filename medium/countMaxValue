@@ -1,0 +1,18 @@
+function countMaxValue(n, queries){
+    let arr = new Array(n).fill(0);
+    let max = 0;
+    let count = 0;
+    queries.forEach(range =>{
+        for (let i=range[0]-1; i<range[1]; i++) {
+            arr[i]+=1;
+            if (arr[i]>max) {
+                max = arr[i];
+                count = 1;
+            } else if (arr[i] == max) {
+                count++;
+            }
+        }
+    })
+    return count;
+    
+}
